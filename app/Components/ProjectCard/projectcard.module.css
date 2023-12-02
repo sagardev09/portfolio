@@ -1,0 +1,32 @@
+.container {
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  width: 380px;
+  display: flex;
+  position: relative;
+  color: white;
+  border-radius: 15px;
+}
+.title {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+.github {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  cursor: pointer;
+  transition: all 1s linear;
+}
+.link {
+  position: absolute;
+  right: 60px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.github:hover {
+  right: 20px;
+  transition: all 1s linear;
+}

@@ -1,0 +1,16 @@
+.container {
+  width: 800px;
+  max-width: 800px;
+}
+.wrapper {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.heading {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: capitalize;
+}

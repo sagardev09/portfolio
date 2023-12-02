@@ -1,0 +1,24 @@
+.container {
+  padding: 40px 0;
+}
+.projectcontainer {
+  display: flex;
+
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.left {
+  max-width: 800px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper {
+  display: flex;
+  gap: 100px;
+}
+.heading {
+  font-size: 44px;
+  color: #fff;
+}

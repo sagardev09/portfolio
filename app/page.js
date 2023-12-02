@@ -1,94 +1,73 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import header from "@/public/header.png"
+import BlogContent from './Components/BlogContent/BlogContent'
+import AchievementCard from './Components/AchievementCard/AchievementCard'
 
 export default function Home() {
+
+  const data = [1, 2, 3]
+  const data2 = [1, 2, 3, 4, 5, 6]
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className={styles.headerimg}>
+        <Image src={header} alt='header_img' />
+      </div>
+      <div className={styles.title}>
+        <h5>Hi, {"I'm"} </h5>
+        <span>Sagar Dabas</span>
+      </div>
+      <div className={styles.intro}>
+        <div className={styles.introtop}>
+          <h1>
+            I make
+            <span className={styles.skills}>
+              <span className={styles.skillsBackground}>
+              </span>
+              Front-End & UI/UX
+            </span>
+            products that people
+            <span className={styles.love}>
+              <span className={styles.skillsBackground2}></span>
+              love.
+            </span>
+          </h1>
+          <h5>Developer, Content Creator, Indie Hacker, traveller and Student. I play read, write and travel for fun.</h5>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.blogSection}>
+        <h5>Latest Articles</h5>
+        <BlogContent />
       </div>
+      <div>
+        <h5 className={styles.achivementtitle}>
+          Achievements
+        </h5>
+        <div className={styles.AchievementCard}>
+          {data.map((item, index) => {
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+            return (
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+              <AchievementCard key={index} pic={header} title={"muh hackathon"} />
+            )
+          })
+          }
+        </div>
+        <div>
+          <h5 className={styles.achivementtitle}>
+            Some Of My Projects
+          </h5>
+          <div className={styles.AchievementCard}>
+            {data2.map((item, index) => {
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+              return (
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+                <AchievementCard key={index} pic={header} title={"muh hackathon"} />
+              )
+            })
+            }
+          </div>
+        </div>
       </div>
     </main>
   )

@@ -1,0 +1,61 @@
+.container {
+}
+.wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 250px;
+  overflow: hidden;
+}
+.second {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 250px;
+  overflow: hidden;
+  gap: 5px;
+}
+.image {
+  height: 80px;
+  width: 80px;
+}
+.image img {
+  border-radius: 50%;
+
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+.line {
+  height: 170px;
+  width: 0.1px;
+  background-color: #ffffff97;
+}
+.time {
+  font-size: 10px;
+  color: #ffffff7c;
+  font-weight: 500;
+}
+.position {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 800;
+}
+.company {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 800;
+}
+.work {
+  font-size: 13px;
+  color: #ffffff97;
+  font-weight: 800;
+  line-height: 170%;
+}

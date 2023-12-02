@@ -1,0 +1,28 @@
+.categoryContainer {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 0.1px solid #ffffff55;
+}
+.titleCategory {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.latest,
+.story,
+.tutorial,
+.coding {
+  padding-bottom: 17px;
+}
+.latestactive,
+.storyactive,
+.tutorialactive,
+.codingactive {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #10a5e9;
+  transition: all 0.2s ease-in-out;
+}

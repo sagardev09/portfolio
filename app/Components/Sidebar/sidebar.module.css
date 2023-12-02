@@ -1,0 +1,37 @@
+.container {
+  width: 15vw;
+  height: 100vh;
+  border-right: 0.1px solid #ffffff55;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.svg {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+.home,
+.about,
+.blog,
+.projects,
+.resume,
+.contact {
+  padding-right: 22px;
+}
+.homeactive,
+.aboutactive,
+.blogactive,
+.projectsactive,
+.resumeactive,
+.contactactive {
+  padding-right: 20px;
+  border-right: 2px solid #10a5e9;
+  transition: all 0.2s ease-in-out;
+}

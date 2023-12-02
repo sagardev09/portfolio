@@ -1,0 +1,35 @@
+.container {
+  padding: 40px 0;
+  max-width: 900px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.heading {
+  font-size: 44px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.worktitle {
+  font-size: 24px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+.edu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
